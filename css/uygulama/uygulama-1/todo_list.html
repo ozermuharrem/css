@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alış Veriş Listem</title>
+    <meta name="keywords" content="alış,veriş,listem">
+    <style>
+        li{
+            list-style: none;
+        }
+        #gida{
+            color: purple;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: black;
+            width: 150px;
+            height: 100px;
+            margin: 30px;
+            float: left;
+            position: relative;
+            top: 5px;
+            left: 3px;
+        }
+        #temizlik{
+            color: purple;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: black;
+            width: 150px;
+            height: 100px;
+            margin: 30px;
+            float: left;
+            position: relative;
+            top: 0px;
+            padding: 0px;
+
+
+        }
+        #sarkuteri{
+            color: purple;
+            border-style: solid;
+            border-radius: 5px;
+            border-color: black;
+            width: 150px;
+            height: 100px;
+            margin: 30px;
+            float: left;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="allpage">
+        <ul>
+            <li id="gida">
+                <input type="checkbox" name="liste">Gıda Mad.
+                <ul>
+                    <li>
+                        <input type="checkbox" name="liste">Bulgur
+                    </li>
+                    <li>
+                        <input type="checkbox" name="liste">Ekmek
+                    </li>
+                    <li>
+                        <input type="checkbox" name="liste">Pirinç
+                    </li>
+                </ul>
+            </li>
+            <li id="temizlik">
+                <input type="checkbox" name="liste">Temizlik Mal.
+                <ul>
+                    <li>
+                        <input type="checkbox" name="liste">Deterjan
+                    </li>
+                    <li>
+                        <input type="checkbox" name="liste">Sabun
+                    </li>
+                    <li>
+                        <input type="checkbox" name="liste">Şampuan
+                    </li>
+                </ul>
+            </li>
+            <li id="sarkuteri">
+                <input type="checkbox" name="liste">Şarküteri
+            <ul>
+                <li>
+                    <input type="checkbox" name="liste">Peynir
+                </li>
+                <li>
+                    <input type="checkbox" name="liste">Zeytin
+                </li>
+                <li>
+                    <input type="checkbox" name="liste">Kaşar
+                </li>
+            </ul>
+        </li>
+        </ul>
+
+    </div>
+</body>
+</html>

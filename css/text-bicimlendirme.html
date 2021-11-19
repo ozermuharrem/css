@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Dosis', sans-serif;
+        width: 700px;
+        margin: 30px auto;
+    }
+    h2{
+        text-transform: capitalize;
+        /* text-transform eklendiği etiketteki texlerin büyük harf veya küçük harf olasını ayarlar yukarıda ki örnekteilk harfleri büyük yaptık */
+        text-align: center;
+    }
+    p#first{
+        text-align: right;
+    }
+    p#second{
+        text-align: center;
+    }
+    p#third{
+        text-align: left;
+        border: 1px solid rgb(0,0,0,0.4);
+        padding: 10px;
+        /*paragrafı 3 e böler */
+        column-count: 3; 
+        -webkit-column-count: 3; /*opera crome safari tarayıcıları desteklemesi için yazılırı*/
+        -moz-column-count: 3; /* mozilla tarayıcısı bölme işlemini desteklememsi için yazılır */
+        /*paragrafın arasına border ekler*/
+        column-rule: 2px solid darkblue;
+        -webkit-column-rule: 2px solid darkblue;
+        -moz-column-rule: 2px solid darkblue;
+        /* yukarıda ki işlemi yapmamız lazım farklı tarayıcıların farklık sürümlerinde desteklenmesi için */
+    }
+    p#forth{
+        /*satır başı için */
+        text-indent: 10px;
+        /* paragrafı sağa sola yaslar */
+        text-align: justify;
+
+    }
+    div{
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    <p id="first">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae mollitia, cum provident, asperiores voluptate dignissimos obcaecati veritatis nisi soluta quod in animi magni quas! Illo neque odit explicabo consequuntur eligendi!
+    </p>
+    <p id="second">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum, molestiae, explicabo officiis voluptatum dolorem perferendis temporibus mollitia, reiciendis sunt ut architecto maxime error? Accusantium ex quis dolorum omnis quasi minus!
+    </p>
+    <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor impedit quo, dolorem porro deleniti officia quibusdam nisi minus doloremque adipisci perspiciatis beatae, blanditiis sed in! Id repellat suscipit neque totam.
+    </p>
+    <div>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+    </div>
+
+    <p id="forth">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem modi sequi corrupti voluptatum inventore officiis vel, laboriosam ducimus dignissimos. Ut eum minima quae architecto nisi quos, itaque at consectetur nam cupiditate culpa facere aut possimus ad rem vero. Rem repellat, architecto quam deserunt similique necessitatibus! Autem error odio doloremque soluta consectetur placeat quaerat. Consequuntur eligendi blanditiis itaque eos facere. Odit magnam blanditiis laboriosam aliquid, doloremque illo qui necessitatibus, nulla atque eius, vitae assumenda officia repellendus soluta eum deleniti saepe quod perspiciatis expedita nostrum commodi. Minima eaque maxime quam et nesciunt perspiciatis, ut dolore, omnis quo ullam optio impedit rem.
+    </p>
+</body>
+</html>

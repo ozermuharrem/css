@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnternal CSS</title>
+    <style>
+        p{
+            color: chartreuse;
+            font-size: 20px;
+           border: 1px solid yellow;
+        }
+        h1{
+            color: darkblue;
+            font-size: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="border: 1px solid red;"> 
+            Internal CSS
+        </h1>
+        <p>
+            Internal CSS bir HTML sayfasında bulunan başlıkları etkiler. 
+            <br>
+            head etiketi içerisinde title etiketinin altına konumlandırılır.
+        </p>
+            <p style="border: solid darkblue;">
+            style etiketi arasına kodlar yazılır <br>
+            p{ <br>color: red<br>} </p>
+        <p>
+            sadece ilgilisayfada ki kodları etkiler
+        </p>
+        <p>
+            <table style="color: blue; border: solid red; background-color: yellow;"> 
+                <tr>
+                    <td>
+                        yukarıda ki örnekte hem internal css hemde inline css e örnekler verdik <br>head etiketi içerisinde style etiketi açıp internal css tanıladık <br>header etiketi içerisinde de sadece o etiketi etkileyen inline etiket tanımladık
+                    </td>
+                    <td>
+                        <img src="ünlem.png" alt="">
+                    </td>
+                </tr>
+        </table>
+        </p>
+    </header>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutucuk A.Ş.</title>
+    <style>
+        .all{
+            background-color: green;
+            border-style: solid;
+            width: 1000px;
+            height: 1000px;
+        }
+        .all p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 150px;
+            margin: 0px;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-color: red;
+            background-color: red;
+            float: left;  /*bu yugulama da çalışyor*/ 
+            /* direk neden display: inline yapmadık inline olunca yükseklik ve genişlik verilemediği için display inline-blok yazılınca genişlik ve yükseklik değerleri verilebiliyor */
+          /*  display: inline-block; */ /*bu uygulamada*/
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-color: blue;
+            background-color: blue;
+            float: left;
+            /*display: inline-block; */
+        }
+        .box3{
+            width: 300px;
+            height: 300px;
+            border-style: solid;
+            border-color: orange;
+            background-color: orange;
+            float: left;
+            /*display: inline-block; */
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <p>
+        GAME HEADER
+        </p>
+        <div class="box1">
+            box#1
+        </div>
+        <div class="box2">
+            box#2
+        </div>
+        <div class="box3">
+            box#3
+        </div>
+    </div>
+    <main>
+        <h3>
+            yukarıda ki tasarım benim yaptığım Sadık Turan öğretmenin yaptığı tasarım için <a href="box2.html" target="_blank">tıklayın</a>
+        </h3>
+    </main>
+</body>
+</html>

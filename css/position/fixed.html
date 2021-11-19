@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FİXED</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 30px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            color: gray;
+            display: inline-block;
+            font-size: 30px;
+        }
+        #conter{
+            width: 1000px;
+            height: 800px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+            margin: 10px;   
+        }
+        #second{
+            position: fixed;
+            top: 0;
+            right: 0;
+          }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Position
+        </h1>
+        <ul>
+            <li>
+                <a href="#">static |</a>
+            </li> 
+            <li>
+                <a href="relative.html">relative |</a>
+            </li>
+            <li>
+                <a href="fixed.html">fixed |</a>
+            </li>
+            <li>
+                <a href="absolute.html">absolute |</a>
+            </li>
+            <li>
+                <a href="sticky.html">sticky</a>
+            </li>
+        </ul>
+    </header>
+    <hr>
+    <article>
+        <div id="conter">
+            <div id="first" class="box">
+                #1 : div
+            </div>
+            <div id="second" class="box">
+                #2 : div
+            </div>
+            <div id="third" class="box">
+                #3 : div
+            </div>
+        </div>
+    </article>
+    <main>
+        <h2>
+            position: fixed;
+        </h2>
+        <ul>
+            <li>left (sol)</li>
+            <li>right (sağ)</li>
+            <li>top (üst)</li>
+            <li>bottom (alt)</li>
+        </ul>
+        <p>
+            kutunun sayfaya göre hizalanır
+        </p>
+        <p>
+            örnegin mesaj kutularında daha çok kullanılır. Kullanıcının gördüğü her yerde kalır
+        </p>
+    </main>
+</body>
+</html>

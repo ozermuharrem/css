@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABSOLUTE</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 30px;
+        }
+        li{
+            display: inline-block;
+        }
+        a{
+            color: gray;
+            display: inline-block;
+            font-size: 30px;
+        }
+        #conter{
+            width: 1000px;
+            height: 800px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+            margin: 10px;   
+        }
+        #second{
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Position
+        </h1>
+        <ul>
+            <li>
+                <a href="#">static |</a>
+            </li> 
+            <li>
+                <a href="relative.html">relative |</a>
+            </li>
+            <li>
+                <a href="fixed.html">fixed |</a>
+            </li>
+            <li>
+                <a href="absolute.html">absolute |</a>
+            </li>
+            <li>
+                <a href="sticky.html">sticky</a>
+            </li>
+        </ul>
+    </header>
+    <hr>
+    <article>
+        <div id="conter">
+            <div id="first" class="box">
+                #1 : div
+            </div>
+            <div id="second" class="box">
+                #2 : div
+            </div>
+            <div id="third" class="box">
+                #3 : div
+            </div>
+        </div>
+    </article>
+    <main>
+        <h2>
+            position: absolute;
+        </h2>
+        <ul>
+            <li>left (sol)</li>
+            <li>right (sağ)</li>
+            <li>top (üst)</li>
+            <li>bottom (alt)</li>
+        </ul>
+        <p>
+            absolide yapılan div normal akışının dışına çıkar
+        </p>
+        <p>
+            Başlangıç pozisyonundan ki konumu değişir yukarı doğru
+        </p>
+        <p id="önemli">
+            Önemli Bir Açıklama;<br>
+            absolide edilen div kutusu eğer bir önce ki kutuda relative edilmediye body etiketine göre hiza alır<br>
+            Eğer genel div içerisinde relative var ise o gelen div e göre hiza alır
+        </p>
+    </main>
+</body>
+</html>

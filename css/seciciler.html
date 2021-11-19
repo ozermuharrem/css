@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seçiciler</title>
+    <style>
+        h2{
+            color: brown;
+            font-size: 16,5px;
+        }
+        #tablo2 {
+        border-collapse: collapse;
+        width: 100%;
+        }
+         
+        #tablo2 td, #tablo2 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+         
+        #tablo2 tr:nth-child(even){background-color: #f2f2f2;}
+         
+        #tablo2 tr:hover {
+        background-color: #2ecc71;
+        color:#fff;
+        }
+         
+        #tablo2 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #2c3e50;
+        color: white;
+        }
+
+        #tablo3 {
+        border-collapse: collapse;
+        width: 100%;
+        }
+         
+        #tablo3 td, #tablo3 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+         
+        #tablo3 tr:nth-child(even){
+            background-color: #f2f2f2;}
+         
+        #tablo3 tr:hover {
+        background-color: #2ecc71;
+        color:#fff;
+        }
+         
+        #tablo3 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #2c3e50;
+        color: white;
+        }
+        #tablo4{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #tablo4 td, #tablo4 th{
+            border:1px solid #ddd;
+            padding: 8px;
+        }
+        #tablo4 tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        #tablo4 tr:hover {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+        #tablo4 th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #2c3e50;
+            color: white;
+        }
+        #tablo5 {
+        border-collapse: collapse;
+        width: 100%;
+        }
+         
+        #tablo5 td, #tablo5 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        }
+         
+        #tablo5 tr:nth-child(even){background-color: #f2f2f2;}
+         
+        #tablo5 tr:hover {
+        background-color: #2ecc71;
+        color:#fff;
+        }
+         
+        #tablo5 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #2c3e50;
+        color: white;
+        }
+
+        </style>
+</head>
+<body>
+    <h1>
+        Seçici İşlemleri
+    </h1>
+    <p>
+        <ul>
+            <li>
+                Neyi Seçerseniz onunla ilgili işlem yaparsınız
+            </li>
+            <li>
+                CSS kodu uygulayacagız, öncelikle HTML elemanını seçmeniz gerekir.
+            </li>
+            <li>
+                işte bu aşamada <span style="color: red;"> selector</span> yada <span style="color: red
+                ;">seçici</span> dediğimiz kodlar devreye girmektedir.
+            </li>
+        </ul>
+    </p>
+        <table id="tablo1" border="1">
+            <thead style="background-color: royalblue; color: white;">
+                <tr>
+                    <td>
+                        Secici
+                    </td>
+                    <td>
+                        {özellik:değer;
+                    </td>
+                    <td>
+                        özellik:değer}
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: gray;">
+                    <td>
+                        p
+                    </td>
+                    <td>
+                        {color:red}
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        h1
+                    </td>
+                    <td>
+                        {color:green;
+                    </td>
+                    <td>
+                        font-size:20px}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <hr>
+        <h2>
+            Temel Seçici Örnekleri
+        </h2>
+            <table id="tablo2">
+                <tr>
+                        <th>
+                            Seçici(CSS Kodu)
+                        </th>
+                        <th>
+                            Açıklama
+                        </th>
+                    <tr>
+                        <td>
+                            *
+                        </td>
+                        <td>
+                            Herşey Seçilecek
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            p
+                        </td>
+                        <td>
+                            p tagı seçicelec
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #ilk
+                        </td>
+                        <td>
+                            id degeri ilk olan seçilecek
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            .son
+                        </td>
+                        <td>
+                            class degeri son olan seçilecek
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            h1.egik
+                        </td>
+                        <td>
+                            class degeri egik olan h1 etiketleri seçilecek
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            p strong
+                        </td>
+                        <td>
+                            p tagı içerisinde ki tüm strong tagları seçer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            nav #buton
+                        </td>
+                        <td>
+                            nav tagı içindeki id degeri buton olan tüm elemanlar Seçilecek
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            h1,h2,h3,h4,h5,h6
+                        </td>
+                        <td>
+                            h1-h6 arasın da ki tüm agları seçer
+                        </td>
+                    </tr>
+                </table>
+                <h2>
+
+                    Karmaşık Seçici Örnekleri
+                </h2>
+                <table id="tablo3">
+                        <tr>
+                            <th>
+                            Seçici{CSS Kodu}
+                            </th>
+                            <th>
+                                Açıklama
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                .banner p
+                            </td>
+                            <td>
+                                class değeri banner olan eleman içerisinde ki p tagını seçer
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                div>p
+                            </td>
+                            <td>
+                                evebeyni div olan tüm tagları seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                .menu ul li
+                            </td>
+                            <td>
+                                class degeri menu olan eleman içerisinde ki ul tagının içinde ki li tagını seçer
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                nav.menu li
+                            </td>
+                            <td>
+                                nav tagı içerisinde bulunan ve class degeri menu olan eleman içerisinde ki li tagını seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                body>p:fist-child
+                            </td>
+                            <td>
+                                body tagı içerisinde ilk paragrafı seçer (ilk çocuk eleman)
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                body>p:last-child
+                            </td>
+                            <td>
+                                body tagı içerisinde ki son paragrafı seçer(son çocuk eleman)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                :activee
+                            </td>
+                            <td>
+                                aktif elemanı seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                :after
+                            </td>
+                            <td>
+                                sonraki elemanı seçer
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>
+                        Link ve Özellik Seçiciler
+                    </h2>
+                    <table id="tablo4">
+                            <tr>
+                            <th>
+                                Seçici{CSS Kodu}
+                            </th>
+                            <th>
+                                Açıklama
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                a:link
+                            </td>
+                            <td>
+                                henüz ziyaret edilmemiş likleri seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                a:visited
+                            </td>
+
+                            <td>
+                                ziyaret edilmiş linkleri seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                a:focus
+                            </td>
+                            <td>
+                                klavye ile etkinleştirilmiş linkleri seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                a:hover
+                            </td>
+                            <td>
+                                üzerinde fare olan linki seçer
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                input[type]
+                            </td>
+                            <td>
+                                input içinde type özelliğine sahip olanları seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                input[type="text"]
+                            </td>
+                            <td>
+                                input içinde ytpe özelliği text olan olanları seçer
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                img[title~="kedi"]
+                            </td>
+                            <td>
+                                img tagında ki title özelliği kedi olanı seçer
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="pseudo">
+                        <h2>
+                            pseudo Seçiciler
+                        </h2>
+                        <p>
+                            pseudo seçiciler ikiye ayrılır
+                        </p>
+                        <ul>
+                            <li>Pseudo Element</li>
+                            <li>
+                                Pseudo Class
+                            </li>
+                        </ul>
+
+                        <h3>
+                            Pseudo Element
+                        </h3>
+                        <p>
+                            Sayfa içerisinde herhangi bir paragragın ilk harfini veya ilk satırını seçebilmek için kullanılır Bir elemanın bir parçasını seçmek için kullanılır
+                        </p>
+                        <h3>
+                            Pseudo Class
+                        </h3>
+                        <p>
+                            Bir kapsam içerisinde ki elemanları seçmek için kullanılır 
+                        </p>
+                        <table id="tablo5">
+                            <tr>
+                            <th>
+                                Seçici{CSS Kodu}
+                            </th>
+                            <th>
+                                Açıklama
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                            p::first-line
+                        </td>
+                        <td>
+                            p etiketinin ilk satırı
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            ul li:fitst-child
+                        </td>
+                        <td>
+                            ul etiketi içerisinde ki li etiketinin ilk elemanı
+                        </td>
+                        </tr>
+                        
+
+                    </div>
+</body>
+</html>
