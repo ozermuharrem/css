@@ -7,13 +7,9 @@
     <title>responsive Image</title>
     <style>
         *{
-    margin: 0px;
-    padding: 0px;
     background-color: rgb(255,255,210);
 }
 body{
-    width: 500px;
-    height: 1200px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav{
@@ -41,7 +37,18 @@ h1{
     margin-top: 15px;
     text-align: center; 
 }
-    </style>
+
+img{
+    max-width: 1500px;
+    height: auto;
+
+}
+@media screen and (max-width:500px){
+    img{
+        max-width: 50%;
+    }
+}
+</style>
 </head>
 <body>
     <header>
@@ -54,6 +61,26 @@ h1{
             Responsive Image
         </h1>
     </header>
+    <div class="container">
+        <div class="image">
+            <img src="image/k1.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/k2.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/k3.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/k4.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/k5.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="image/k6.jpg" alt="">
+        </div>
+    </div>
     
 </body>
 </html>
